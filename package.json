@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "module": "^1.2.5",
+    "node": "^19.6.1",
+    "node_module": "^0.0.0",
+    "nodemodule": "^0.3.0",
+    "nodemon": "^2.0.20"
+  }
+}

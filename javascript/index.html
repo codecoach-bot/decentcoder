@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script type="text/javascript">
+        // function myname(){
+        //     let MyAge = document.getElementById('myAge')
+        //     let dogAge = document.getElementById('dogage')
+        //     MyAge.value = dogAge.value * 3
+
+        // }
+
+    </script>
+</head>
+<body >
+    <p id="math"></p>
+    <h1 id="sum">hello</h1>
+    <h1>Studying javascript varibles:</h1>
+    <p> variable is the container to store the values.</p>
+    <p id="demo"></p>
+    <p id="demo1">hellomyname</p>
+    
+    <script>
+        var x =10;
+        var y =20
+        var z =x+y;
+       let sum =  document.getElementById('math').innerHTML = 10;
+        console.log(sum);
+       var dom = document.getElementById('sum').innerHTML = "hi we are using getelementbyid function.";
+        document.getElementById('demo').innerHTML = z;
+        var car = {type:"hero", model:"h34hero", color:"red"};
+        document.getElementById('demo').innerHTML = car.color;
+        var firstname = "kiran";
+        var lastname = "Bhoi";
+        document.getElementById("demo").innerHTML = firstname + "<br>" + lastname; 
+        var myname = "hello we will \"learning\" the javascript ";
+        document.getElementById("demo").innerHTML = myname;
+        
+        var names = ["kiran", "yash", "akshay", "manu", "sonu"];
+        //names.pop();
+        names.splice(2, 0, "rahul", "amit");
+
+        document.getElementById('demo').innerHTML = names.join(" / ");
+
+        for(count =0; count<=10; count++){
+            document.write(count);
+            document.write("<br>");
+
+        }
+        function myname1(a, b){
+            return a*b;    
+        }
+        document.getElementById('demo1').innerHTML = myname1(5,5);
+        
+        var bgcolor = ["#3366ff","#d2435f", "#00ff00", "#ff00ff", "#ff0000"];
+        document.body.style.background = bgcolor[Math.floor(Math.random()*bgcolor.length)];
+        
+     </script>
+    <!-- <b>Enter your dog age and according to that we will find out your age: </b><br>&nbsp;
+    <table id="table1" >
+        <tr>
+            Enter your dog age: <input id="dogage" type="text" name="dage" onkeyup="myname()"><br>&nbsp;
+        </tr>
+        <tr>
+            your age is: <input id="myAge" type="text" name="mage"><br>&nbsp;
+        </tr>
+        <tr>
+            <button type="submit" >Calculate!</button>
+        </tr>
+    </table> -->
+</body>
+</html>

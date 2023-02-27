@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Hinding the html tag content..by using the document manipulation.</p>
+    <p id="demo1">changing the html content size...successfully.</p>
+    <p id="demo2" style="display:none">Hello JavaScript!</p>
+    <h3 id="div">write method deleting rest existing html tag</h3>
+
+    <button type="button" onclick="document.getElementById('demo').style.display = 'none' ">Clickeforchange</button><br><br>
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize = '35px'">changemysize</button><br><br>
+    <button type="button" onclick="document.getElementById('demo2').style.display='block'">Show Me!</button><br><br>
+
+    <button type="button" onclick="document.write(10+10)">Done</button><br><br>
+    <h3 id="car1">car</h3>
+    <script>
+        alert(10+1);
+        const car = {company: "volvo", model:"MT0099", color:"yellow"};
+        car.color = "red";
+        car.type = "4wheeler";
+
+        document.getElementById('car1').innerHTML = "car details :"+ "<br>" + car.company + "<br>"+
+        car.model + "<br>"+ car.color;
+
+    </script>
+
+    <button onclick="window.print()">Print this page</button><br><br>
+</body>
+</html>
