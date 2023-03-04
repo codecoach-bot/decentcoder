@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1106.06px;
+    height: auto;
+    background-image: url('./assignment/istockphoto-517188688-612x612.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
