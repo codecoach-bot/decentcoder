@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        /*
+        //class and methods .
+        class hello{
+        
+            constructor(name, id){
+                this.studentname =name;
+                this.studentid = id;
+
+                document.write("constructor function calling:")
+            }
+            meassage(){
+                console.log("Hello js is the partial object orianted language.");
+            }
+            //prototype method.
+            sum(){
+                document.write("<br>" + "Hello "+ this.studentname + "<br>"+ this.studentid +"<br>");
+            }
+
+            static myNew(){
+                document.write("Static method calling....");
+            }
+        }
+       
+        let a = new hello("Yahoo", 11);
+        let b = new hello("Akshay kumar", 100);
+       //  a.name = "CODECOACH_KIRAN";
+        a.meassage();
+        a.sum();
+        b.sum();
+        hello.myNew();
+        
+*/
+
+        // Inheritance and it use :
+
+        class employee{
+            constructor(name, age, salary){
+                this.empname = name;
+                this.empage = age;
+                this.empsalary = salary;
+
+                console.log("constructor : employee :-> ");
+            }
+            info(){
+                document.write(`<h3>Employee Class</h3> Name: ${this.empname} <br> Age: ${this.empage} <br> Salary: ${this.empsalary}`);
+            }
+        }
+
+        class manager extends employee{
+            
+            info(){
+                super.info();
+                let ta = 1000;
+                let da = 3000;
+                let total = this.empsalary + ta + da;
+                document.write(`<h3>Manager Class</h3> Name: ${this.empname} <br> Age: ${this.empage} <br> Salary: ${total}`);
+            }
+            // constructor(name){ 
+            //     super(); // if you want to calling 
+            //     console.log("constructor : manager calling "+ name);
+            // }
+            // info(){
+            //     super.info();
+            //     document.write("manager info method calling.");
+            // }
+        }
+        class supervisor extends manager{
+            info(){
+                super.info();
+                let tx = 1000;
+                let leave = 500;
+                let totalamount = this.empsalary - tx -leave;
+                document.write(`<h3>Supervisor Class</h3> Name: ${this.empname} <br> Age: ${this.empage} <br> Salary: ${totalamount}`);
+
+            }
+        }
+        let a =new supervisor("Akashay", 29, 16000);
+        a.info();
+        
+
+/*
+// get and set method use to set data and get data..
+        class student{
+            constructor(){
+                let name;
+                let mark;
+
+            }
+            getName(){
+                return this.name;
+            }
+            setName(name){
+                this.name=  name;
+
+            }
+            getMark(){
+                return this.mark;
+
+            }
+            setMark(mark){
+                this.mark = mark;
+            }
+        }
+        var obj = new student();
+        obj.setName("KIRAN");
+        obj.setMark(100);
+        document.write("<b> Student details:<b> "+"<br>"+ obj.getName()+ "<br>" + obj.getMark());
+  */
+// static method and static property:
+/*
+class user{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+
+    }
+    
+}
+
+
+
+const obj1 = new user("Kiran", 26);
+const obj2 = new user("Akshay", 22);
+
+
+console.log(obj1, obj2);
+*/
+
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
