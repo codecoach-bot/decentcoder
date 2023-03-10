@@ -124,6 +124,3 @@ user1 = {
 user1 = new Greed('Manu', 22, 4);
 console.log(user1);
 */
-let full = true;
-var nameMy = "kiran";
-const Sumof = undefined;
